@@ -40,7 +40,10 @@ function clickCells(cell, player) {
 }
 
 function checkWin () {
-  let win1 = ['1', '2', '3'];
-  let checkX = xWin.includes(win1);
-  console.log(xWin.includes(win1));
+  let win1 = [1, 2, 3];
+  let xWinNumbers = xWin.map(Number);
+  let checkX = win1.every(function (num) {
+    return xWinNumbers.includes(num);
+  });
+  console.log(checkX);
   }
