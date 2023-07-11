@@ -7,3 +7,4 @@ cells.forEach(function(cell) {
     cell.append(makeX);
   })
 })
+
